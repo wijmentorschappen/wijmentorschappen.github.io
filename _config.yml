@@ -1,10 +1,12 @@
-url: https://y7kim.github.io
+url: https://www.wijmentorschappen.nl/
 baseurl:
 
 # Site settings
 title: Wij Mentorschappen
 email: administratie@wijmentorschappen.nl
 description: "Website voor Wij Mentorschappen"
+logo: /img/logo.png
+google_site_verification: uvxt7v2Tv1jVdJACQNj2Yqjpaycqvur1Ao7J1ilD1i0
 
 # Team names, titles and social links
 people:
@@ -34,4 +36,7 @@ social:
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: pretty/
+
+plugins:
+  - jekyll-seo-tag
