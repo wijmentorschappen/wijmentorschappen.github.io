@@ -1,0 +1,28 @@
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span><br/>
+                    <span class="copyright kvk">KVK 74408070</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        {% for network in site.social %}
+                        <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        {{/* <li><a href="#contentModal1" class="portfolio-link" data-toggle="modal">Downloads</a>
+                        </li>
+                        <li><a href="#">Tarieven</a>
+                        </li> */}}
+                        <li><a href="https://www.nbpm.nl" target="_blank">NBPM</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>

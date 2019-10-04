@@ -1,0 +1,100 @@
+{% include css/bootstrap.min.css %}
+{% include css/agency.css %}
+{{ content }}
+
+
+.navbar-brand .logo{
+    width: 50px;
+    height: 30px;
+}
+
+@media(min-width:768px) {
+    .navbar-default .navbar-brand .logo {
+        width: 90px;
+        height: 60px;
+    }
+
+    .navbar-default .navbar-brand {
+        padding: 0px 15px 20.5px;
+    }
+    .navbar-default.navbar-shrink .navbar-brand {
+        padding: 14.5px 15px 20.5px;
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand .logo{
+        width: 60px;
+        height: 40px;
+    }
+}
+
+.text-wij{
+    color: #{{ site.data.template.color.primary }};
+}
+
+.text-padding-bottom{
+    padding-bottom: 40px;
+}
+
+
+blockquote{
+    display:block;
+    background: #fff;
+    padding: 15px 20px 15px 45px;
+    margin: 30px 0 60px;
+    position: relative;
+
+    /*Font*/
+    line-height: 1.2;
+    color: #666;
+    text-align: left;
+
+    /*Box Shadow - (Optional)*/
+    -moz-box-shadow: 2px 2px 15px #ccc;
+    -webkit-box-shadow: 2px 2px 15px #ccc;
+    box-shadow: 2px 2px 15px #ccc;
+
+    /*Borders - (Optional)*/
+    border-left-style: solid;
+    border-left-width: 15px;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-color: #{{ site.data.template.color.primary }};
+}
+
+blockquote::before{
+    content: "\201C"; /*Unicode for Left Double Quote*/
+
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #{{ site.data.template.color.primary }};;
+
+    /*Positioning*/
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+blockquote::after{
+    /*Reset to make sure*/
+    content: "";
+}
+
+.text-source{
+    font-size: 11px;
+    font-style: italic;
+}
+.text-source a{
+    color: #333;
+}
+
+.copyright{
+    line-height: 0 !important;
+}
+.kvk{
+    font-size: 13px;
+}
+.text-phone{
+    font-size: 2rem;
+}

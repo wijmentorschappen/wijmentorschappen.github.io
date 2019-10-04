@@ -1,0 +1,37 @@
+url: https://y7kim.github.io
+baseurl:
+
+# Site settings
+title: Wij Mentorschappen
+email: administratie@wijmentorschappen.nl
+description: "Website voor Wij Mentorschappen"
+
+# Team names, titles and social links
+people:
+- name: Marieke Frohoff
+  pic: 1
+  phone: 06 49 200 334
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/company/wij-mentorschappen
+    - title: envelope
+      url: mailto:marieke@wijmentorschappen.nl
+- name: Annelies van der Have
+  pic: 2
+  phone: 06 49 488 812
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/company/wij-mentorschappen
+    - title: envelope
+      url: mailto:annelies@wijmentorschappen.nl
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+    - title: linkedin
+      url: https://www.linkedin.com/company/wij-mentorschappen
+    - title: envelope
+      url: mailto:info@wijmentorschappen.nl
+
+# Build settings
+markdown: kramdown
+permalink: pretty
