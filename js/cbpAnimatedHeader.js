@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
@@ -40,5 +40,7 @@ var cbpAnimatedHeader = (function() {
 	}
 
 	init();
+	//call scrollPage to ensure the header is rendered correct on page refresh
+	scrollPage()
 
 })();
