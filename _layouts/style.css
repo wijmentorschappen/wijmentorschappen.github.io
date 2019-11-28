@@ -130,3 +130,7 @@ blockquote::after{
         margin: 0;
     }
 }
+
+section h2.section-heading {
+    margin-bottom: 75px;
+}
