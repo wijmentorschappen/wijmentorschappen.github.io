@@ -1,24 +1,45 @@
  <!-- Download Modal -->
- {% for post in site.posts %}
-    <div class="content-modal modal fade" id="contentModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
+<div class="content-modal modal fade" id="linksModal" tabindex="-1" role="dialog" aria-hidden="true">
+ <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
                 </div>
             </div>
-            <div class="container">
+        </div>
+        <div class="modal-body">
+            <h2>Documenten</h2>
+            <p>Voor de aanvraag van mentorschap zijn een aantal documenten belangrijk. Deze kan je via de site van de rechtspraak downloadn. Hieronder de 3 belangrijkste. Bla bla bla</p>
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>{{ post.title }}</h2>
-                            {% include {{ post.content-include }}.html %}
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="portfolio-caption">
+                            <h4>Verzoek tot mentorschap</h4>
+                            <p class="text-muted">Uitleg bla bla bla</p>
+                            <p><a href="example.com">Download</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="portfolio-caption">
+                            <h4>Bereidverklaring</h4>
+                            <p class="text-muted">Uitleg bla bla bla</p>
+                            <p><a href="example.com">Download</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="portfolio-caption">
+                            <h4>Akkoordverklaring</h4>
+                            <p class="text-muted">Uitleg bla bla bla</p>
+                            <p><a href="example.com">Download</a></p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="modal-close-container">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Sluit</button>
+            </div>
         </div>
     </div>
-{% endfor %}
+</div>
+</div>

@@ -792,6 +792,16 @@ ul.social-buttons li a:active {
     outline: 0;
 }
 
+.modal-close-container{
+    padding-top: 3rem;
+}
+
+.modal-dialog{
+    width: 100vw;
+    margin: 3rem;
+    padding-right: 6rem;
+}
+
 .content-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
