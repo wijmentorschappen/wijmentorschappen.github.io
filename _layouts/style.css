@@ -134,3 +134,14 @@ blockquote::after{
 section h2.section-heading {
     margin-bottom: 75px;
 }
+
+.nbpm-logo{
+    background-image: url('img/nbpm.png');
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 5px;
+}
