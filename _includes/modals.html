@@ -1,24 +1,45 @@
  <!-- Download Modal -->
- {% for post in site.posts %}
-    <div class="content-modal modal fade" id="contentModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
+<div class="content-modal modal fade" id="linksModal" tabindex="-1" role="dialog" aria-hidden="true">
+ <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
                 </div>
             </div>
-            <div class="container">
+        </div>
+        <div class="modal-body">
+            <h2>Documenten</h2>
+            <p>Voor de aanvraag van mentorschap zijn een aantal documenten belangrijk. Deze zijn te vinden op de <a href="https://www.rechtspraak.nl/">site van de rechtspraak</a>. Hieronder de 3 belangrijkste voor het aanvragen van mentorschap. Als je het fijn vindt kunnen we deze samen met jou invullen.</p>
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>{{ post.title }}</h2>
-                            {% include {{ post.content-include }}.html %}
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="portfolio-caption">
+                            <h4>Verzoek tot mentorschap</h4>
+                            <p class="text-muted">Dit formulier is verplicht bij de aanvraag, aan de hand hiervan kan de rechtbank beoordelen of mentorschap nodig is.</p>
+                            <p><a href="https://www.rechtspraak.nl/SiteCollectionDocuments/instellen-bewindvoering-en-of-mentorschap.pdf">Download</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="portfolio-caption">
+                            <h4>Bereidverklaring</h4>
+                            <p class="text-muted">Dit formulier is voor de mentor, de mentor geeft hierop aan bereid te zijn jou mentor te worden.</p>
+                            <p><a href="https://www.rechtspraak.nl/SiteCollectionDocuments/bereidverklaring-mentor.pdf">Download</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <div class="portfolio-caption">
+                            <h4>Akkoordverklaring</h4>
+                            <p class="text-muted">Via dit formulier geven alle betrokkenen (zoals ouders of bewindvoerder) akkoord voor het mentorschap</p>
+                            <p><a href="https://www.rechtspraak.nl/sitecollectiondocuments/akkoordverklaring.pdf">Download</a></p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="modal-close-container">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Sluit</button>
+            </div>
         </div>
     </div>
-{% endfor %}
+</div>
+</div>
