@@ -152,6 +152,16 @@ section h2.section-heading {
     margin-right: 5px;
 }
 
+.modal-close-container{
+    padding-top: 3rem;
+}
+
+.modal-dialog{
+    width: 100vw;
+    margin: 3rem;
+    padding-right: 6rem;
+}
+
 /* For mobile hide X in popup and make it full screen */
 @media (max-width: 480px) {
     .content-modal .modal-content{
