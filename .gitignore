@@ -17,6 +17,9 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+# test files
+icons.html
+
 # =========================
 # Operating System Files
 # =========================

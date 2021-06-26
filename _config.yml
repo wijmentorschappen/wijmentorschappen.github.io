@@ -41,6 +41,9 @@ social:
     - title: Privacy reglement
       icon: lock
       url: https://www.wijmentorschappen.nl/pdf/privacyreglement.pdf
+    - title: Algemene voorwaarden
+      icon: file-text-o
+      url: https://www.wijmentorschappen.nl/pdf/algemene-voorwaarden.pdf
 
 
 # Build settings
