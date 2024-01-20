@@ -1,10 +1,10 @@
-url: https://www.wijmentorschappen.nl/
+url: https://www.wijmentorschappen.nl
 baseurl:
 
 # Site settings
 title: Wij Mentorschappen
 email: administratie@wijmentorschappen.nl
-description: "Wij Mentorschappen, professionele positieve en persoonlijk mentorschap in de regio Gelderland en Overijssel"
+description: "Wij Mentorschappen, professioneel positief en persoonlijk mentorschap in de regio Gelderland en Overijssel"
 logo: /img/logo.png
 google_site_verification: uvxt7v2Tv1jVdJACQNj2Yqjpaycqvur1Ao7J1ilD1i0
 lang: nl_NL
@@ -14,6 +14,7 @@ people:
 - name: Marieke Frohoff
   pic: 1
   phone: 06 49 200 334
+  phone_link: 0649200334
   social:
     - title: linkedin
       url: https://www.linkedin.com/company/wij-mentorschappen
@@ -22,6 +23,7 @@ people:
 - name: Annelies van der Have
   pic: 2
   phone: 06 49 488 812
+  phone_link: 0649488812
   social:
     - title: linkedin
       url: https://www.linkedin.com/company/wij-mentorschappen
@@ -30,10 +32,19 @@ people:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-    - title: linkedin
+    - title: LinkedIn
+      icon: linkedin
       url: https://www.linkedin.com/company/wij-mentorschappen
-    - title: envelope
+    - title: Info mail adres
+      icon: envelope
       url: mailto:info@wijmentorschappen.nl
+    - title: Privacy reglement
+      icon: lock
+      url: https://www.wijmentorschappen.nl/pdf/privacyreglement.pdf
+    - title: Algemene voorwaarden
+      icon: file-text-o
+      url: https://www.wijmentorschappen.nl/pdf/algemene-voorwaarden.pdf
+
 
 # Build settings
 markdown: kramdown

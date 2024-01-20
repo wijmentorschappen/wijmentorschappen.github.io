@@ -110,15 +110,121 @@ blockquote::after{
 }
 @media (min-width: 768px){
     .title-text{
-        font-size: 75px;
-        line-height: 75px;
+        font-size: 8rem;
+        line-height: 8rem;
+        margin: 0;
+    }
+}
+@media (max-width: 995px){
+    .title-text{
+        font-size: 5rem;
+        line-height: 5rem;
         margin: 0;
     }
 }
 @media (max-width: 560px){
     .title-text{
-        font-size: 28px;
-        line-height: 28px;
+        font-size: 3rem;
+        line-height: 3rem;
         margin: 0;
+    }
+}
+@media (max-width: 360px){
+    .title-text{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        margin: 0;
+    }
+}
+
+section h2.section-heading {
+    margin-bottom: 75px;
+}
+
+.nbpm-logo{
+    background-image: url('img/nbpm.png');
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 5px;
+}
+
+.modal-close-container{
+    padding-top: 3rem;
+}
+
+.modal-dialog{
+    width: 100vw;
+    margin: 3rem;
+    padding-right: 6rem;
+}
+
+/* For mobile hide X in popup and make it full screen */
+@media (max-width: 480px) {
+    .content-modal .modal-content{
+        padding: 0px;
+    }
+
+    .content-modal .modal-content h2{
+        font-size: 1.8em;
+    }
+
+    .modal-dialog{
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .content-modal .close-modal{
+        display: none;
+    }
+
+}
+
+/* Smaller font for screen less than 370PX  */
+@media (max-width: 370px) {
+    section h2.section-heading{
+        font-size: 3rem;
+    }
+}
+
+/* Make sure the popup centers the items and arranges them under each other */
+@media (min-width: 768px) and (max-width: 992px){
+    .modal-body .col-sm-6{
+        float: initial;
+        width: 100%;
+    }
+}
+
+
+
+
+h1, h2, h3, h4, h5{
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+body{
+    min-width: 300px;
+}
+@media(max-width:992px) {
+    ul.social-buttons{
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
 }
