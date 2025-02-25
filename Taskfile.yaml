@@ -1,0 +1,19 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  run:
+    desc: Run the site localhost
+    cmds:
+      - bundle exec jekyll serve --watch --host=0.0.0.0
+  instal-deps:
+    desc: Install required dependencies
+    cmds:
+      - gem install bundler
+      - bundle install
+
+  default:
+    cmds:
+      - task: run
+  
