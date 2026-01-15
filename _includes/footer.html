@@ -1,28 +1,32 @@
   <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span><br/>
-                    <span class="copyright kvk">KVK 74408070</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li><a href="{{ network.url }}" alt="{{ network.title }}" title="{{ network.title }}" target="_blank"><i class="fa fa-{{ network.icon }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        {{/* <li><a href="#contentModal1" class="portfolio-link" data-toggle="modal">Downloads</a>
-                        </li>
-                        <li><a href="#">Tarieven</a>
-                        </li> */}}
-                        <li><a href="/pdf/Klachtenformulier Wij Mentorschappen.pdf" target="_blank">Klachtenformulier</a>
-                        <li><i class="aegis-logo"></i><a href="https://www.aegis.nl/" target="_blank">Aegis</a></li>
-                    </ul>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; {{ site.title }} <span id="copyright-year"></span><br/>
+                <span class="copyright kvk">KVK 74408070</span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    {% for network in site.social %}
+                    <li><a href="{{ network.url }}" alt="{{ network.title }}" title="{{ network.title }}" target="_blank"><i class="fa fa-{{ network.icon }}"></i></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    {{/* <li><a href="#contentModal1" class="portfolio-link" data-toggle="modal">Downloads</a>
+                    </li>
+                    <li><a href="#">Tarieven</a>
+                    </li> */}}
+                    <li><a href="/pdf/Klachtenformulier Wij Mentorschappen.pdf" target="_blank">Klachtenformulier</a>
+                    <li><i class="aegis-logo"></i><a href="https://www.aegis.nl/" target="_blank">Aegis</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+</script>
