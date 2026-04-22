@@ -1370,7 +1370,49 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
     var $tip  = this.tip()
     var title = this.getTitle()
 
-    $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](title)
+    function sanitizeHtml(unsafeHtml) {
+      var container = document.createElement('div')
+      container.innerHTML = unsafeHtml == null ? '' : String(unsafeHtml)
+
+      var allowedTags = {
+        B: true, STRONG: true, I: true, EM: true, U: true, BR: true, SPAN: true,
+        SMALL: true, MARK: true, SUB: true, SUP: true, P: true, DIV: true
+      }
+      var allowedAttrs = { 'class': true, 'title': true, 'aria-label': true }
+
+      function clean(node) {
+        var children = Array.prototype.slice.call(node.childNodes)
+        for (var i = 0; i < children.length; i++) {
+          var child = children[i]
+          if (child.nodeType === 1) {
+            if (!allowedTags[child.tagName]) {
+              node.removeChild(child)
+              continue
+            }
+            var attrs = Array.prototype.slice.call(child.attributes)
+            for (var j = 0; j < attrs.length; j++) {
+              var name = attrs[j].name.toLowerCase()
+              var value = attrs[j].value
+              var isEventHandler = name.indexOf('on') === 0
+              var isUnsafeUrl = (name === 'href' || name === 'src' || name === 'xlink:href') && /^\s*javascript:/i.test(value)
+              if (!allowedAttrs[name] || isEventHandler || isUnsafeUrl) {
+                child.removeAttribute(attrs[j].name)
+              }
+            }
+            clean(child)
+          } else if (child.nodeType !== 3) {
+            node.removeChild(child)
+          }
+        }
+      }
+
+      clean(container)
+      return container.innerHTML
+    }
+
+    $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](
+      this.options.html ? sanitizeHtml(title) : title
+    )
     $tip.removeClass('fade in top bottom left right')
   }
 
